@@ -101,6 +101,8 @@ model-viewer {
 
     .text-area {
         width: 100%;
+        display: flex;
+        justify-content: center;
         align-items: center;
         margin-left: 0;
     }
