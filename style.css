@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* MAIN TITLE */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* background: linear-gradient(135deg,#dcea75,#ea3535); */
+    background-color: black;
+    background-image: url("/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.text-area {
+    width: 50%;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff; 
+}
+
+.logo_container {
+    padding-top: 2rem;
+    font-size: 2rem;
+    float: left;
+    align-items: left;
+}
+
+.logo_container .logo{
+    height: 4rem;
+    width: auto;
+
+}
+
+.text-area h1 {
+    font-size: 3.7rem;
+    padding-top: 20vh;
+    padding-bottom: 2vh;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: rgb(0, 0, 0) 0px 20px 20px;
+
+}
+.team{
+    color: rgb(160, 238, 194);
+}
+
+.text-area p {
+    width: 70%;
+    font-size: 1.20rem;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1rem;
+    align-items: center;
+    text-shadow: rgb(0, 0, 0) 0px 20px 20px;
+}
+
+
+.text-area button {
+    width: 30%;
+    height: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    background: linear-gradient(135deg,#de42ef,#a965ee);
+    border: #fff 1px solid;
+    color: #fff;
+    transition: all 1s ease;
+
+
+}
+
+button:hover {
+    background: linear-gradient(135deg,#a965ee,#de42ef);
+}
+
+
+model-viewer {
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 615px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text-area {
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .text-area p {
+        text-align: center;
+    }
+
+    model-viewer {
+        width: 100%;
+        height: 60vh;
+    }
+}
