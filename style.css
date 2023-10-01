@@ -132,3 +132,42 @@ model-viewer {
 
 }
 }
+
+@media screen and (max-width: 400px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .text-area p {
+        text-align: center;
+    }
+
+    model-viewer {
+        width: 100%;
+        height: 60vh;
+    }
+    .text-area h1 {
+    font-size: 1.8rem;
+}
+    .logo_container {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo_container .logo{
+    height: 2rem;
+    width: auto;
+
+}
+}
