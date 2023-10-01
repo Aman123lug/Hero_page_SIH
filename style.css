@@ -137,6 +137,9 @@ model-viewer {
     body {
         flex-direction: column;
         height: auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
     }
 
     .text-area {
